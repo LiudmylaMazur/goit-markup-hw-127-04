@@ -45,12 +45,15 @@ address {
 /* #region header */
 .logo-header {
   display: flex;
-
   justify-content: flex-start;
   align-items: center;
 }
 .header-main {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -74,7 +77,7 @@ address {
 
 .nav-list {
   display: flex;
-  gap: 40px;
+  column-gap: 40px;
   margin-right: auto;
 }
 
@@ -86,11 +89,21 @@ address {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
   cursor: pointer;
+}
+.active-link::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: #404bbf;
+  display: block;
+  position: relative;
+  top: 24px;
 }
 .contact {
   margin-right: 0;
@@ -98,7 +111,7 @@ address {
 }
 .contact-list {
   display: flex;
-  gap: 40px;
+  column-gap: 40px;
   justify-content: flex-end;
 }
 
@@ -111,6 +124,7 @@ address {
   font-style: normal;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -122,7 +136,8 @@ address {
 .hero {
   background: #2e2f42;
   padding: 188px 0px;
-
+  max-width: 1440px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -150,6 +165,7 @@ address {
 .hero-button {
   background-color: #4d5ae5;
   color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -161,6 +177,7 @@ address {
   align-items: center;
   border-radius: 4px;
   padding: 16px 32px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -187,7 +204,7 @@ address {
 .features-list {
   display: flex;
 
-  gap: 24px;
+  column-gap: 24px;
   align-items: flex-start;
 }
 .features-item {
@@ -242,13 +259,17 @@ address {
 .team-list {
   display: flex;
 
-  gap: 24px;
+  column-gap: 24px;
   align-items: flex-start;
   margin-top: 72px;
 }
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
   width: 264px;
 }
 .team-h3 {
@@ -277,6 +298,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover,
 .icon-link:focus {
@@ -319,6 +342,14 @@ address {
 
 .portfolio-items {
   max-width: 360px;
+}
+.portfolio-items:hover,
+.portfolio-items:focus {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  cursor: pointer;
 }
 .portfolio-h3 {
   font-weight: 500;
@@ -381,6 +412,6 @@ footer {
 }
 .media {
   display: flex;
-  gap: 24px;
+  column-gap: 24px;
 }
 /* #endregion footer */
