@@ -269,11 +269,10 @@ address {
   margin-top: 8px;
 }
 .icon-link {
-  border: 1px solid #8e8f99;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: block;
+
   background-color: #4d5ae5;
   display: flex;
   justify-content: center;
@@ -343,6 +342,12 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.footer {
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -361,5 +366,21 @@ footer {
 
   width: 264px;
   margin-top: 16px;
+}
+.footer-icon {
+  display: block;
+}
+.title-four {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.media {
+  display: flex;
+  gap: 24px;
 }
 /* #endregion footer */
