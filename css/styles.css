@@ -341,7 +341,7 @@ address {
   padding: 32px 16px;
 }
 
-.portfolio-items {
+.items-overlay {
   position: relative;
   max-width: 360px;
   overflow: hidden;
@@ -397,7 +397,7 @@ footer {
 .footer {
   display: flex;
   gap: 120px;
-  align-items: flex-start;
+
   justify-content: flex-start;
 }
 .footer-logo {
