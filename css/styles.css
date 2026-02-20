@@ -364,6 +364,9 @@ address {
 .portfolio-items:hover .portfolio-items-overlay {
   transform: translateY(0);
 }
+.portfolio-items {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .portfolio-items:hover,
 .portfolio-items:focus {
   box-shadow:
