@@ -89,7 +89,7 @@ address {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
-
+  position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
@@ -103,8 +103,9 @@ address {
   width: 100%;
   background-color: #404bbf;
   display: block;
-  position: relative;
-  top: 24px;
+  position: absolute;
+
+  top: 44px;
 }
 .contact {
   margin-right: 0;
@@ -348,6 +349,12 @@ address {
 }
 .portfolio-items-overlay {
   background-color: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
 
   padding: 40px 32px 0 32px;
   width: 100%;
@@ -365,6 +372,7 @@ address {
   transform: translateY(0);
 }
 .portfolio-items {
+  max-width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-items:hover,
@@ -400,7 +408,7 @@ footer {
 .footer {
   display: flex;
   gap: 120px;
-
+  align-items: baseline;
   justify-content: flex-start;
 }
 .footer-logo {
