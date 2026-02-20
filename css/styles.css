@@ -104,6 +104,7 @@ address {
   background-color: #404bbf;
   display: block;
   position: absolute;
+  color: #404bbf;
 
   top: 44px;
 }
